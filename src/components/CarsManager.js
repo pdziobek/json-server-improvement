@@ -10,7 +10,7 @@ export default function CarsManager() {
         fetch(`${API}/db`)
             .then((response) => response.json())
             .then(response => {
-                console.log(response);
+                // console.log(response);
             })
             .then(response => {
                 setCars(response.cars)
