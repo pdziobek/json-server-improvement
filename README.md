@@ -1,4 +1,20 @@
-### Część 1 - Do wykonania z wykładowcą
+### HOW TO RUN THE PROJECT
+* please be sure that you already have installed node.js and git.
+* to run this project , install it locally using npm:
+```
+$ cd ../json-server-improvement
+$ npm install
+$ npm start
+```
+* open second terminal
+* install json server:
+```
+$ npm install -g json-server 
+$ json-server -p 4000 db.json
+```
+
+
+### Część 1
 
 Stwórz komponent `CarsManager`.
 
