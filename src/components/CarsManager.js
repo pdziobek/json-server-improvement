@@ -11,7 +11,8 @@ export default function CarsManager() {
             .then((response) => response.json())
             .then(response => {
                 console.log(response);
-                setCars(response)
+                // samo response zwracało Ci obiekt który ma klucz cars i wartość tablice z obiektami samochodów
+                setCars(response.cars)
             })
             .catch(error => {
                 console.log(error);
