@@ -9,11 +9,11 @@ export default function CarsManager() {
     const fetchAllCars = () => {
         fetch(`${API}/db`)
             .then((response) => response.json())
-            // .then(response => {
-            //     console.log(response);
-            // })
-            .then(res => {
-                setCars(res)
+            .then(response => {
+                console.log(response);
+            })
+            .then(response => {
+                setCars(response.cars)
             })
             .catch(error => {
                 console.log(error);
@@ -42,23 +42,6 @@ export default function CarsManager() {
 
                             ))}
                         </ul>
-                        {/*{cars.map((el, key) => <Car handleUpdate={updateCar} handleDelete={deleteCar} key={key} {...el} />)}*/}
-
-
-                        {/*<ul className="list">*/}
-
-                        {/*    {firstPage.map((entity, index) => (*/}
-
-                        {/*        <li key={index}>*/}
-                        {/*            <div>*/}
-                        {/*                <h5>{entity.name}</h5>*/}
-                        {/*                <p>{entity.description}</p>*/}
-                        {/*            </div>*/}
-                        {/*            <p>{entity.donation}</p>*/}
-                        {/*        </li>*/}
-                        {/*    ))}*/}
-                        {/*</ul>*/}
-
                     </div>
                 </div>
             </div>
