@@ -14,7 +14,7 @@ $ json-server -p 4000 db.json
 ```
 
 
-### Część 1 - Do wykonania z wykładowcą
+### Część 1
 
 Stwórz komponent `CarsManager`.
 
