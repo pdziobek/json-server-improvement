@@ -11,9 +11,7 @@ export default function CarsManager() {
             .then((response) => response.json())
             .then(response => {
                 console.log(response);
-            })
-            .then(response => {
-                setCars(response.cars)
+                setCars(response)
             })
             .catch(error => {
                 console.log(error);
